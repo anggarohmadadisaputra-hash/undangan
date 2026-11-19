@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Undangan Pernikahan</title>
+<meta name="theme-color" content="#87CEEB">
+<meta name="description" content="Undangan pernikahan digital">
+<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="locked">
+
+<div id="cover" class="cover">
+  <i class="cloud c1"></i><i class="cloud c2"></i><i class="cloud c3"></i>
+  <div class="glass cover-box">
+    <p>The Wedding Of</p>
+    <h1 id="cvNames" class="script"></h1>
+    <div class="orn">✿ ❀ ✿</div>
+    <p>Kepada Yth. Bapak/Ibu/Saudara/i</p>
+    <h3 id="guest">Tamu Undangan</h3>
+    <button id="openBtn" class="btn">Buka Undangan</button>
+  </div>
+</div>
+
+<nav id="nav" class="nav">
+  <b id="navLogo" class="script"></b>
+  <button id="burger" aria-label="Menu">☰</button>
+  <ul id="menu">
+    <li><a href="#home">Beranda</a></li><li><a href="#couple">Mempelai</a></li>
+    <li><a href="#event">Acara</a></li><li><a href="#gallery">Galeri</a></li>
+    <li><a href="#rundown">Rundown</a></li><li><a href="#rsvp">RSVP</a></li>
+    <li><a href="#wishes">Ucapan</a></li>
+  </ul>
+</nav>
+
+<button id="musicBtn" class="music" aria-label="Musik" title="Putar/jeda musik">♪</button>
+
+<main>
+  <header id="home" class="hero">
+    <i class="cloud c1"></i><i class="cloud c2"></i>
+    <div class="hero-in">
+      <p>The Wedding Of</p>
+      <h1 id="heroNames" class="script"></h1>
+      <p id="heroDate" class="hero-date"></p>
+      <p id="quote" class="quote"></p>
+    </div>
+  </header>
+
+  <section id="couple" class="sec">
+    <h2 class="reveal">Mempelai</h2>
+    <p class="reveal sub">Dengan memohon rahmat dan ridho Tuhan Yang Maha Esa, kami mengundang Anda pada pernikahan kami.</p>
+    <div class="pair">
+      <article class="glass person reveal" id="pGroom"></article>
+      <div class="amp script reveal">&amp;</div>
+      <article class="glass person reveal" id="pBride"></article>
+    </div>
+  </section>
+
+  <section id="event" class="sec alt">
+    <h2 class="reveal">Hari Bahagia</h2>
+    <div id="cd" class="cd-row reveal"></div>
+    <div class="cards">
+      <div class="glass card reveal"><h3>Akad Nikah</h3><p id="akad"></p></div>
+      <div class="glass card reveal"><h3>Resepsi</h3><p id="resepsi"></p></div>
+    </div>
+    <div class="glass place reveal">
+      <h3 id="venue"></h3><p id="address"></p>
+      <div class="row">
+        <button id="copyBtn" class="btn small">Salin Alamat</button>
+        <a id="mapBtn" class="btn small ghost" target="_blank" rel="noopener">Buka Google Maps</a>
+        <a id="calBtn" class="btn small ghost" target="_blank" rel="noopener">Simpan ke Kalender</a>
+      </div>
+      <iframe id="map" class="map" loading="lazy" title="Lokasi acara" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+
+  <section id="gallery" class="sec">
+    <h2 class="reveal">Galeri</h2>
+    <div id="grid" class="grid"></div>
+  </section>
+
+  <section id="rundown" class="sec alt">
+    <h2 class="reveal">Susunan Acara</h2>
+    <ol id="tl" class="tl"></ol>
+  </section>
+
+  <section id="rsvp" class="sec">
+    <h2 class="reveal">Konfirmasi Kehadiran</h2>
+    <form id="rsvpForm" class="glass form reveal">
+      <input id="rName" placeholder="Nama lengkap" required maxlength="60">
+      <select id="rStatus"><option>Hadir</option><option>Tidak Hadir</option><option>Masih Ragu</option></select>
+      <input id="rCount" type="number" min="1" max="10" value="1" aria-label="Jumlah tamu">
+      <textarea id="rMsg" rows="3" placeholder="Pesan (opsional)" maxlength="200"></textarea>
+      <button class="btn" type="submit">Kirim via WhatsApp</button>
+    </form>
+  </section>
+
+  <section id="wishes" class="sec alt">
+    <h2 class="reveal">Buku Tamu &amp; Ucapan</h2>
+    <form id="wishForm" class="glass form reveal">
+      <input id="wName" placeholder="Nama" required maxlength="40">
+      <textarea id="wMsg" rows="3" placeholder="Tulis ucapan dan doa" required maxlength="300"></textarea>
+      <button class="btn" type="submit">Kirim Ucapan</button>
+    </form>
+    <div id="wishList" class="wishes"></div>
+    <p class="note">Ucapan tersimpan di browser perangkat ini (LocalStorage).</p>
+  </section>
+</main>
+
+<footer class="foot">
+  <h2 class="script" id="fNames"></h2>
+  <p id="fText"></p>
+  <p class="copy">Copyright © Angga Rohmad Adi Saputra</p>
+</footer>
+
+<div id="lb" class="lb" hidden>
+  <button id="lbX" aria-label="Tutup">✕</button><button id="lbP" aria-label="Sebelumnya">‹</button>
+  <img id="lbImg" alt=""><button id="lbN" aria-label="Berikutnya">›</button>
+</div>
+<div id="toast" class="toast"></div>
+
+<script src="js/config.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

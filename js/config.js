@@ -1,0 +1,36 @@
+/* ==========================================================
+   KONFIGURASI UNDANGAN - EDIT FILE INI SAJA
+   (Semua teks, foto, jadwal, nomor WA, musik ada di sini)
+   Opsional: ganti source ke "json" agar data dibaca dari
+   data/invitation.json (butuh server/Vercel, bukan file://).
+   ========================================================== */
+window.INVITATION_CONFIG = {
+  source: "config",
+  groom: { nick: "Raka", name: "Raka Pratama, S.T.", parents: "Putra dari Bapak Hendra Pratama & Ibu Siti Aminah", photo: "assets/images/groom.svg" },
+  bride: { nick: "Nayla", name: "Nayla Putri Anggraini, S.Pd.", parents: "Putri dari Bapak Budi Santoso & Ibu Ratna Dewi", photo: "assets/images/bride.svg" },
+  quote: "Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu pasangan hidup agar kamu merasa tenteram kepadanya. (QS. Ar-Rum: 21)",
+  heroImage: "assets/images/hero.svg",
+  event: {
+    date: "2027-03-20T08:00:00+07:00",   // format: TAHUN-BULAN-TANGGALTJAM:MENIT:DETIK+07:00 (WIB)
+    akadTime: "08.00 - 10.00 WIB",
+    resepsiTime: "11.00 - 14.00 WIB",
+    venue: "Gedung Serbaguna Graha Biru",
+    address: "Jl. Raden Intan No. 12, Bandar Lampung, Lampung",
+    mapsQuery: "Bandar Lampung, Lampung",   // kata kunci untuk peta tertanam
+    mapsLink: "https://www.google.com/maps/search/?api=1&query=Bandar+Lampung"
+  },
+  whatsapp: "6281234567890",   // format internasional tanpa + atau 0 di depan
+  music: "assets/music/music.wav",
+  gallery: [
+    "assets/images/gallery1.svg", "assets/images/gallery2.svg", "assets/images/gallery3.svg",
+    "assets/images/gallery4.svg", "assets/images/gallery5.svg", "assets/images/gallery6.svg"
+  ],
+  rundown: [
+    { time: "07.30", title: "Registrasi Tamu", desc: "Tamu undangan mengisi buku tamu." },
+    { time: "08.00", title: "Akad Nikah", desc: "Prosesi ijab kabul." },
+    { time: "10.30", title: "Sesi Foto Keluarga", desc: "Dokumentasi bersama keluarga." },
+    { time: "11.00", title: "Resepsi", desc: "Penyambutan tamu dan hidangan." },
+    { time: "13.30", title: "Doa & Penutup", desc: "Acara ditutup dengan doa bersama." }
+  ],
+  closing: "Merupakan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu."
+};

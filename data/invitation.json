@@ -1,14 +1,14 @@
 {
   "source": "config",
   "groom": {
-    "nick": "Raka",
-    "name": "Raka Pratama, S.T.",
+    "nick": "Angga",
+    "name": "Angga Rohmad Adi Saputra",
     "parents": "Putra dari Bapak Hendra Pratama & Ibu Siti Aminah",
     "photo": "assets/images/groom.svg"
   },
   "bride": {
-    "nick": "Nayla",
-    "name": "Nayla Putri Anggraini, S.Pd.",
+    "nick": "Keni",
+    "name": "Keni",
     "parents": "Putri dari Bapak Budi Santoso & Ibu Ratna Dewi",
     "photo": "assets/images/bride.svg"
   },

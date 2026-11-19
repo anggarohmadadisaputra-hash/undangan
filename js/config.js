@@ -6,8 +6,8 @@
    ========================================================== */
 window.INVITATION_CONFIG = {
   source: "config",
-  groom: { nick: "Raka", name: "Raka Pratama, S.T.", parents: "Putra dari Bapak Hendra Pratama & Ibu Siti Aminah", photo: "assets/images/groom.svg" },
-  bride: { nick: "Nayla", name: "Nayla Putri Anggraini, S.Pd.", parents: "Putri dari Bapak Budi Santoso & Ibu Ratna Dewi", photo: "assets/images/bride.svg" },
+  groom: { nick: "Angga", name: "Angga Rohmad Adi Saputra", parents: "Putra dari Bapak Hendra Pratama & Ibu Siti Aminah", photo: "assets/images/groom.svg" },
+  bride: { nick: "Keni", name: "Keni", parents: "Putri dari Bapak Budi Santoso & Ibu Ratna Dewi", photo: "assets/images/bride.svg" },
   quote: "Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu pasangan hidup agar kamu merasa tenteram kepadanya. (QS. Ar-Rum: 21)",
   heroImage: "assets/images/hero.svg",
   event: {
